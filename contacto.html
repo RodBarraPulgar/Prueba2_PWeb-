@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - GrupoCero</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="shortcut icon" href="imagenes/logotipo_cero.jpg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+    <!--SE CREA EL ENCABEZADO DE LA PAGINA, QUE CORRESPONDE A UN MENU, ESTE CUENTA CON 5 OPCIONES Y EL LOGO CORRESPONDIENTE-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="imagenes/logo_grupocero.png" width="300" height="120"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="galeria.html">GALERIA</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ACERCA DE
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="nosotros.html">NOSOTROS</a></li>
+                <li><a class="dropdown-item" href="ubicacion.html">UBICACION</a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+
+    <div class="contact_us">
+        <h1>¡Contactanos y realiza tu pedido personalizado!</h1>
+        <hr>
+        <p> ¿Quieres realizar un pedido?<br>
+            ¿Quieres realizar una consulta?<br>
+            Rellena el formulario con tus datos y te contactaremos.
+        </p>
+        <input type="button" name="mostrar" value="Abrir Formulario" id="btnview">
+        <input type="button" name="ocultar" value="Ocultar Formulario" id="btnhide">
+    </div>
+
+    <form class="formulario" method="get" id="formulario">
+        <div class="txt_field">
+            <label for="nombres">Nombres</label>
+            <input type="text" id="nombres" name="nombres">
+        </div>
+
+        <div class="txt_field">
+            <label for="apellido_paterno">Apellido paterno</label>
+            <input type="text" id="apellido_paterno" name="apellido_paterno">
+        </div>
+
+        <div class="txt_field">
+            <label for="apellido_materno">Apellido materno</label>
+            <input type="text" id="apellido_materno" name="apellido_materno">
+        </div>
+
+        <div>
+            <label for="genero">Género</label>
+            <select id="genero" name="genero" size="1">
+                <option value="1">Masculino</option>
+                <option value="2">Femenino</option>
+                <option value="3">Otro</option>
+            </select>
+        </div>
+
+        <div class="txt_field">
+            <label for="rut">Rut</label>
+            <input type="text" id="rut" name="rut">
+        </div>
+
+        <div class="txt_field">
+            <label for="direccion">Dirección(Opcional)</label>
+            <input type="text" id="direccion" name="direccion">
+        </div>
+
+        <div class="txt_field">
+            <label for="correo">Email</label>
+            <input type="email" id="correo" name="correo">
+        </div>
+
+        <div class="txt_field">
+            <label form="celular">Celular</label>
+            <input type="text" id="celular" name="celular">
+        </div>
+        
+        <textarea cols="35" rows="5" placeholder="Ingresar motivo del mensaje" id="txt_area"></textarea>"
+        <br>
+        <input type="submit" name="Enviar" id="enviar">
+
+    </form>
+
+    <section class="weather-content">
+        <h1>Buscador del clima</h1>
+        <div class="result">
+            <p>Agrege ciudad y pais</p>
+        </div>
+        <form action="" method="POST" class="get-weather">
+            <input type="text" name="city" id="city" placeholder="Escribe tu ciudad...">
+            <select name="" id="country">
+                <option disabled selected value="">Elige el pais</option>
+                <option value="CL">Chile</option>
+                <option value="AR">Argentina</option>
+                <option value="CO">Colombia</option>
+            </select>
+            <input type="submit" name="" id="" value="Obtener Clima">
+        </form>
+    </section>
+ 
+    <!--SE REALIZA EL PIE DE PÁGINA CON LOS ENLACES CORRESPONDIENTES A LAS REDES SOCIALES DE LA EMPRESA-->
+    <footer class="footer">
+        <ul>
+            <li><p>copyright@GrupoCero Derechos reservados</p></li>
+            <li><p>Nuestras redes sociales:</p></li>
+            <div class="center">
+                <li><a href="https://www.instagram.com"><img src="imagenes/instagram.png" height="41" width="41" > Instagram</a> </li>
+                <li><a href="https://www.youtube.com"><img src="imagenes/youtube.png" height="41" width="41"> Youtube</a></li>
+                <li><a href="https://www.twitter.com"><img src="imagenes/twitter.png" height="41" width="41"> Twitter</a></li>
+                <li><a href="https://www.facebook.com"><img src="imagenes/facebook.png" height="41" width="41">Facebook</a></li>
+            </div>
+        </ul>
+    </footer> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/script_contacto.js"></script>
+    <script src="js/script.js" ></script>
+</body>
+</html>
+
+
